@@ -9,24 +9,37 @@ import HomeImg02 from "/src/assets/homepage/mobile/image-homepage-profile.jpg";
 import HomeImg02Tablet from "/src/assets/homepage/tablet/image-homepage-profile.jpg";
 import HomeImg02Desktop from "/src/assets/homepage/desktop/image-homepage-profile.jpg";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function Home() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="hidden desktop:px-[165px] tablet:px-[40px] px-8 pt-[32px]">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="desktop:px-[165px] tablet:px-[40px] px-8 pt-[32px]"
+    >
       <div className="flex items-center justify-between">
         <img src={Logo} alt="logo" />
         <div className="desktop:right-[165px] hidden tablet:absolute tablet:right-[40px] tablet:flex tablet:flex-row">
-          <h1 className="mr-[40px] duration-200 hover:text-emerald-400 cursor-pointer text-neutral-700 font-[400] text-[12px] tracking-wider leading-[14px]">
-            HOME
-          </h1>
-          <h1 className="mr-[40px] duration-200 hover:text-emerald-400 cursor-pointer text-neutral-700 font-[400] text-[12px] tracking-wider leading-[14px]">
-            PORTFOLIO
-          </h1>
-          <h1 className="duration-200 hover:text-emerald-400 cursor-pointer text-neutral-700 font-[400] text-[12px] tracking-wider leading-[14px]">
-            CONTACT ME
-          </h1>
+          <Link to="/">
+            <h1 className="mr-[40px] duration-200 hover:text-emerald-400 cursor-pointer text-neutral-700 font-[400] text-[12px] tracking-wider leading-[14px]">
+              HOME
+            </h1>
+          </Link>
+          <Link to="/PortfolioIndex">
+            <h1 className="mr-[40px] duration-200 hover:text-emerald-400 cursor-pointer text-neutral-700 font-[400] text-[12px] tracking-wider leading-[14px]">
+              PORTFOLIO
+            </h1>
+          </Link>
+          <Link to="/Contact">
+            <h1 className="duration-200 hover:text-emerald-400 cursor-pointer text-neutral-700 font-[400] text-[12px] tracking-wider leading-[14px]">
+              CONTACT ME
+            </h1>
+          </Link>
         </div>
         <div>
           <div onClick={() => setOpen(!open)} className="h-[17px]">
@@ -47,15 +60,21 @@ function Home() {
           {open ? (
             <div className="tablet:hidden bg-neutral-700 absolute translate-x-[-205px] translate-y-[30px]">
               <ul className="w-max flex items-center flex-col gap-[32px] px-[65px] py-[40px] text-[12px] leading-[14px] font-normal tracking-wider">
-                <li className="text-white cursor-pointer duration-200 hover:text-gray-300">
-                  HOME
-                </li>
-                <li className="text-white cursor-pointer duration-200 hover:text-gray-300">
-                  PORTFOLIO
-                </li>
-                <li className="text-white cursor-pointer duration-200 hover:text-gray-300">
-                  CONTACT ME
-                </li>
+                <Link to="/">
+                  <li className="text-white cursor-pointer duration-200 hover:text-gray-300">
+                    HOME
+                  </li>
+                </Link>
+                <Link to="/PortfolioIndex">
+                  <li className="text-white cursor-pointer duration-200 hover:text-gray-300">
+                    PORTFOLIO
+                  </li>
+                </Link>
+                <Link to="/Contact">
+                  <li className="text-white cursor-pointer duration-200 hover:text-gray-300">
+                    CONTACT ME
+                  </li>
+                </Link>
               </ul>
             </div>
           ) : null}
@@ -112,9 +131,11 @@ function Home() {
             find me outdoors. I love being out in nature whether that’s going
             for a walk, run or cycling. I’d love you to check out my work.
           </p>
-          <button className="transform motion-safe:hover:scale-110 duration-200 hover:bg-black hover:text-white cursor-pointer mb-[51px] outline outline-2 py-[17px] pr-[36px] pl-[32px] text-neutral-700 text-[12px] leading-[14px] font-normal tracking-wider">
-            GO TO PORTFOLIO
-          </button>
+          <Link to="/PortfolioIndex">
+            <button className="transform motion-safe:hover:scale-110 duration-200 hover:bg-black hover:text-white cursor-pointer mb-[51px] outline outline-2 py-[17px] pr-[36px] pl-[32px] text-neutral-700 text-[12px] leading-[14px] font-normal tracking-wider">
+              GO TO PORTFOLIO
+            </button>
+          </Link>
           <span className="tablet:max-w-[347px] opacity-25 mb-[115px] flex bg-neutral-700 max-w-[311px] h-[1px]"></span>
         </div>
       </div>
@@ -123,9 +144,11 @@ function Home() {
           Interested in doing a project together?
         </h1>
         <span className="desktop:w-[334px] desktop:max-w-[534px] hidden tablet:flex w-[113px] max-w-[113px] opacity-25 bg-neutral-700 h-[1px]"></span>
-        <button className="transform motion-safe:hover:scale-110 duration-200 hover:bg-black hover:text-white cursor-pointer outline outline-2 py-[17px] pr-[35px] pl-[32px] text-neutral-700 text-[12px] leading-[14px] font-normal tracking-wider">
-          CONTACT ME
-        </button>
+        <Link to="/Contact">
+          <button className="transform motion-safe:hover:scale-110 duration-200 hover:bg-black hover:text-white cursor-pointer outline outline-2 py-[17px] pr-[35px] pl-[32px] text-neutral-700 text-[12px] leading-[14px] font-normal tracking-wider">
+            CONTACT ME
+          </button>
+        </Link>
       </div>
       <div className="desktop:pl-[165px] desktop:pr-[165px] desktop:ml-[-165px] desktop:mr-[-165px] tablet:ml-[-40px] tablet:mr-[-42px] tablet:py-[24px] tablet:px-[40px] tablet:flex-row tablet:justify-between tablet:flex-wrap ml-[-32px] mr-[-32px] py-[56px] bg-cover bg-neutral-700 flex items-center flex-col">
         <div className="tablet:flex-row flex items-center flex-col">
@@ -142,15 +165,21 @@ function Home() {
             />
           </svg>
           <div className="tablet:flex tablet:flex-row">
-            <h1 className="tablet:mb-0 tablet:mr-[40px] duration-200 hover:text-gray-300 text-center cursor-pointer text-white mb-[32px] font-[400] text-[12px] tracking-wider leading-[14px]">
-              HOME
-            </h1>
-            <h1 className="tablet:mb-0 tablet:mr-[40px] duration-200 hover:text-gray-300 text-center cursor-pointer text-white mb-[32px] font-[400] text-[12px] tracking-wider leading-[14px]">
-              PORTFOLIO
-            </h1>
-            <h1 className="tablet:mb-0 duration-200 hover:text-gray-300 text-center cursor-pointer text-white mb-[32px] font-[400] text-[12px] tracking-wider leading-[14px]">
-              CONTACT ME
-            </h1>
+            <Link to="/">
+              <h1 className="tablet:mb-0 tablet:mr-[40px] duration-200 hover:text-gray-300 text-center cursor-pointer text-white mb-[32px] font-[400] text-[12px] tracking-wider leading-[14px]">
+                HOME
+              </h1>
+            </Link>
+            <Link to="/PortfolioIndex">
+              <h1 className="tablet:mb-0 tablet:mr-[40px] duration-200 hover:text-gray-300 text-center cursor-pointer text-white mb-[32px] font-[400] text-[12px] tracking-wider leading-[14px]">
+                PORTFOLIO
+              </h1>
+            </Link>
+            <Link to="/Contact">
+              <h1 className="tablet:mb-0 duration-200 hover:text-gray-300 text-center cursor-pointer text-white mb-[32px] font-[400] text-[12px] tracking-wider leading-[14px]">
+                CONTACT ME
+              </h1>
+            </Link>
           </div>
         </div>
         <div className="flex">
@@ -182,7 +211,7 @@ function Home() {
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
