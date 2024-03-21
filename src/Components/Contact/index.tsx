@@ -118,13 +118,11 @@ function Contact() {
               <p className="desktop:max-w-[620px] tablet:max-w-[706px] mb-[24px] max-w-[314px] text-neutral-700 text-[16px] leading-[30px] font-normal">
                 I’d love to hear about what you’re working on and how I could
                 help. I’m currently looking for a new role and am open to a wide
-                range of opportunities. My preference would be to find a
-                position in a company in London. But I’m also happy to hear
-                about opportunities that don’t fit that description. I’m a
+                range of opportunities. I’m also happy to hear about
+                opportunities that don’t fit that description. I’m a
                 hard-working and positive person who will always approach each
-                task with a sense of purpose and attention to detail. Please do
-                feel free to check out my online profiles below and get in touch
-                using the form.
+                task with a sense of purpose and attention to detail. Please
+                feel free to check out my online profiles below.
               </p>
               <div className="mb-[32px] flex">
                 <a
