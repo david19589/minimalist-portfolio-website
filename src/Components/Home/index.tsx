@@ -105,14 +105,14 @@ function Home() {
         </div>
       </div>
       <div className="desktop:mb-[150px] tablet:justify-around tablet:flex-row flex items-center flex-col">
-        <img className="tablet:hidden mb-[32px]" src={HomeImg02} alt="man" />
+        <img className="mb-[32px] tablet:hidden w-[311px]" src={HomeImg02} alt="man" />
         <img
-          className="desktop:hidden translate-y-[-38px] mr-[69px] items-center hidden tablet:flex mb-[32px]"
+          className="desktop:hidden w-[360px] translate-y-[-38px] mr-[69px] items-center hidden tablet:flex mb-[32px]"
           src={HomeImg02Tablet}
           alt="man"
         />
         <img
-          className="tablet:hidden hidden desktop:flex translate-y-[-38px] mr-[69px] items-center mb-[32px]"
+          className="tablet:hidden hidden desktop:flex w-[540px] translate-y-[-38px] mr-[69px] items-center mb-[32px]"
           src={HomeImg02Desktop}
           alt="man"
         />
@@ -122,14 +122,16 @@ function Home() {
             About Me
           </h1>
           <p className="tablet:max-w-[347px] mb-[24px] max-w-[311px] text-neutral-700 text-[16px] leading-[30px] font-normal">
-            I’m a junior front-end developer looking for a new role in an
-            exciting company. I focus on writing accessible HTML, using modern
-            CSS practices and writing clean JavaScript. When writing JavaScript
-            code, I mostly use React, but I can adapt to whatever tools are
-            required. I’m based in London, UK, but I’m happy working remotely
-            and have experience in remote teams. When I’m not coding, you’ll
-            find me outdoors. I love being out in nature whether that’s going
-            for a walk, run or cycling. I’d love you to check out my work.
+            As a junior front-end developer, I'm actively seeking opportunities
+            in a dynamic company. I specialize in crafting accessible HTML,
+            implementing modern CSS practices, and maintaining clean JavaScript
+            code. While React is my primary tool for JavaScript development, I
+            am also proficient in adapting to and using any necessary tools.
+            Although I am based in Tbilisi, Georgia, I am eager to explore
+            remote work opportunities. Apart from coding, I enjoy immersing
+            myself in outdoor activities. Whether it's taking leisurely walks,
+            going for run, or cycling, I find solace in nature. Please take a
+            look at my portfolio.
           </p>
           <Link to="/PortfolioIndex">
             <button className="transform motion-safe:hover:scale-110 duration-200 hover:bg-black hover:text-white cursor-pointer mb-[51px] outline outline-2 py-[17px] pr-[36px] pl-[32px] text-neutral-700 text-[12px] leading-[14px] font-normal tracking-wider">

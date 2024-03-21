@@ -1,18 +1,10 @@
 import Logo from "/src/assets/logo.svg";
 import PortfolioIndexImg01 from "/src/assets/portfolio/mobile/image-portfolio-manage.jpg";
-import PortfolioIndexImg01Tablet from "/src/assets/portfolio/tablet/image-portfolio-manage.jpg";
-import PortfolioIndexImg01Desktop from "/src/assets/portfolio/desktop/image-portfolio-manage.jpg";
 import MenuIcon from "/src/assets/icons/hamburger.svg";
 import CloseIcon from "/src/assets/icons/close.svg";
 import PortfolioIndexImg02 from "/src/assets/portfolio/mobile/image-portfolio-bookmark.jpg";
-import PortfolioIndexImg02Tablet from "/src/assets/portfolio/tablet/image-portfolio-bookmark.jpg";
-import PortfolioIndexImg02Desktop from "/src/assets/portfolio/desktop/image-portfolio-bookmark.jpg";
 import PortfolioIndexImg03 from "/src/assets/portfolio/mobile/image-portfolio-insure.jpg";
-import PortfolioIndexImg03Tablet from "/src/assets/portfolio/tablet/image-portfolio-insure.jpg";
-import PortfolioIndexImg03Desktop from "/src/assets/portfolio/desktop/image-portfolio-insure.jpg";
 import PortfolioIndexImg04 from "/src/assets/portfolio/mobile/image-portfolio-fylo.jpg";
-import PortfolioIndexImg04Tablet from "/src/assets/portfolio/tablet/image-portfolio-fylo.jpg";
-import PortfolioIndexImg04Desktop from "/src/assets/portfolio/desktop/image-portfolio-fylo.jpg";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -87,30 +79,20 @@ function PortfolioIndex() {
       </div>
       <div className="desktop:gap-[125px] tablet:flex-row tablet:justify-center tablet:gap-[69px] tablet:mb-[80px] mb-[72px] flex items-center flex-col">
         <img
-          className="tablet:hidden mb-[32px]"
+          className="mb-[32px] w-[311px] tablet:w-[339px] desktop:w-[540px]"
           src={PortfolioIndexImg01}
           alt="PortfolioIndexImg01"
-        />
-        <img
-          className="hidden desktop:hidden tablet:flex"
-          src={PortfolioIndexImg01Tablet}
-          alt="PortfolioIndexImg01Tablet"
-        />
-        <img
-          className="hidden desktop:flex"
-          src={PortfolioIndexImg01Desktop}
-          alt="PortfolioIndexImg01Desktop"
         />
         <div>
           <span className="opacity-25 flex bg-neutral-700 max-w-[311px] h-[1px]"></span>
           <h1 className="desktop:mt-[103px] desktop:tracking-wide desktop:text-[50px] desktop:leading-[50px] tablet:max-w-[456px] text-start max-w-[311px] text-[36px] mt-[24px] mb-[24px] font-bold tracking-tight">
-            Manage
+            restaurant
           </h1>
           <p className="tablet:max-w-[347px] mb-[24px] max-w-[311px] text-neutral-700 text-[16px] leading-[30px] font-normal">
-            This project required me to build a fully responsive landing page to
-            the designs provided. I used HTML5, along with CSS Grid and
-            JavaScript for the areas that required interactivity, such as the
-            testimonial slider.
+            This project requires building a responsive restaurant website using
+            HTML, CSS(TailWind), JavaScript-React and TypeScript. It includes
+            integrating provided designs, adding interactivity, form handling
+            for reservations, testing, and deployment.
           </p>
           <Link to="/Project01">
             <button className="desktop:mb-[103px] transform motion-safe:hover:scale-110 duration-200 hover:bg-black hover:text-white cursor-pointer mb-[24px] outline outline-2 py-[17px] pr-[36px] pl-[32px] text-neutral-700 text-[12px] leading-[14px] font-normal tracking-wider">
@@ -122,30 +104,19 @@ function PortfolioIndex() {
       </div>
       <div className="desktop:translate-x-[95px] desktop:gap-[125px] tablet:flex-row-reverse tablet:justify-center tablet:gap-[69px] tablet:mb-[80px] mb-[72px] flex items-center flex-col">
         <img
-          className="tablet:hidden mb-[32px]"
+          className="mb-[32px] w-[311px] tablet:w-[339px] desktop:w-[540px]"
           src={PortfolioIndexImg02}
           alt="PortfolioIndexImg01"
-        />
-        <img
-          className="hidden desktop:hidden tablet:flex"
-          src={PortfolioIndexImg02Tablet}
-          alt="PortfolioIndexImg01Tablet"
-        />
-        <img
-          className="hidden desktop:flex"
-          src={PortfolioIndexImg02Desktop}
-          alt="PortfolioIndexImg01Desktop"
         />
         <div>
           <span className="opacity-25 flex bg-neutral-700 max-w-[311px] h-[1px]"></span>
           <h1 className="desktop:mt-[103px] desktop:tracking-wide desktop:text-[50px] desktop:leading-[50px] tablet:max-w-[456px] text-start max-w-[311px] text-[36px] mt-[24px] mb-[24px] font-bold tracking-tight">
-            Bookmark
+            Ip Tracker
           </h1>
           <p className="tablet:max-w-[347px] mb-[24px] max-w-[311px] text-neutral-700 text-[16px] leading-[30px] font-normal">
-            This project required me to build a fully responsive landing page to
-            the designs provided. I used HTML5, along with CSS Grid and
-            JavaScript for the areas that required interactivity, such as the
-            features section.
+            This project is a web app built with HTML, CSS and JavaScript-React
+            to track IP addresses and show their geolocation on a map. It
+            fetches data using an API and displays it using Leaflet for mapping.
           </p>
           <Link to="/Project02">
             <button className="desktop:mb-[103px] transform motion-safe:hover:scale-110 duration-200 hover:bg-black hover:text-white cursor-pointer mb-[24px] outline outline-2 py-[17px] pr-[36px] pl-[32px] text-neutral-700 text-[12px] leading-[14px] font-normal tracking-wider">
@@ -157,30 +128,20 @@ function PortfolioIndex() {
       </div>
       <div className="desktop:gap-[125px] tablet:flex-row tablet:justify-center tablet:gap-[69px] tablet:mb-[80px] mb-[72px] flex items-center flex-col">
         <img
-          className="tablet:hidden mb-[32px]"
+          className="mb-[32px] w-[311px] tablet:w-[339px] desktop:w-[540px]"
           src={PortfolioIndexImg03}
           alt="PortfolioIndexImg01"
-        />
-        <img
-          className="hidden desktop:hidden tablet:flex"
-          src={PortfolioIndexImg03Tablet}
-          alt="PortfolioIndexImg01Tablet"
-        />
-        <img
-          className="hidden desktop:flex"
-          src={PortfolioIndexImg03Desktop}
-          alt="PortfolioIndexImg01Desktop"
         />
         <div>
           <span className="opacity-25 flex bg-neutral-700 max-w-[311px] h-[1px]"></span>
           <h1 className="desktop:mt-[103px] desktop:tracking-wide desktop:text-[50px] desktop:leading-[50px] tablet:max-w-[456px] text-start max-w-[311px] text-[36px] mt-[24px] mb-[24px] font-bold tracking-tight">
-            Insure
+            interactive
           </h1>
           <p className="tablet:max-w-[347px] mb-[24px] max-w-[311px] text-neutral-700 text-[16px] leading-[30px] font-normal">
-            This was a small project which mostly consisted of HTML and CSS. I
-            built a fully-responsive landing page. The only JavaScript this
-            project required was to enable the toggling of the mobile
-            navigation.
+            This project requires building a React web app to manage credit card
+            details, built with HTML, CSS and JavaScript-React. It has two main
+            components: a header for visualizing the card and a body for input
+            handling using React Hook Form.
           </p>
           <Link to="/Project03">
             <button className="desktop:mb-[103px] transform motion-safe:hover:scale-110 duration-200 hover:bg-black hover:text-white cursor-pointer mb-[24px] outline outline-2 py-[17px] pr-[36px] pl-[32px] text-neutral-700 text-[12px] leading-[14px] font-normal tracking-wider">
@@ -192,30 +153,20 @@ function PortfolioIndex() {
       </div>
       <div className="desktop:translate-x-[95px] desktop:gap-[125px] tablet:flex-row-reverse tablet:justify-center tablet:gap-[69px] mb-[80px] flex items-center flex-col">
         <img
-          className="tablet:hidden mb-[32px]"
+          className="mb-[32px] w-[311px] tablet:w-[339px] desktop:w-[540px]"
           src={PortfolioIndexImg04}
           alt="PortfolioIndexImg01"
-        />
-        <img
-          className="hidden desktop:hidden tablet:flex"
-          src={PortfolioIndexImg04Tablet}
-          alt="PortfolioIndexImg01Tablet"
-        />
-        <img
-          className="hidden desktop:flex"
-          src={PortfolioIndexImg04Desktop}
-          alt="PortfolioIndexImg01Desktop"
         />
         <div>
           <span className="opacity-25 flex bg-neutral-700 max-w-[311px] h-[1px]"></span>
           <h1 className="desktop:mt-[103px] desktop:tracking-wide desktop:text-[50px] desktop:leading-[50px] tablet:max-w-[456px] text-start max-w-[311px] text-[36px] mt-[24px] mb-[24px] font-bold tracking-tight">
-            Fylo
+            Splitter
           </h1>
           <p className="tablet:max-w-[347px] mb-[24px] max-w-[311px] text-neutral-700 text-[16px] leading-[30px] font-normal">
-            This project was built in pure HTML and CSS. I had mobile and
-            desktop designs to work to and built it so that it was
-            fully-responsive. I took a mobile-first approach and used modern CSS
-            like Flexbox and Grid for layout purposes.
+            This project is a responsive tip calculator built with HTML, CSS, and
+            JavaScript. Users input bill amounts, select tip percentages, and
+            specify the number of people. The calculator dynamically calculates
+            tips and total bills for a seamless experience on all devices.
           </p>
           <Link to="/Project04">
             <button className="desktop:mb-[103px] transform motion-safe:hover:scale-110 duration-200 hover:bg-black hover:text-white cursor-pointer mb-[24px] outline outline-2 py-[17px] pr-[36px] pl-[32px] text-neutral-700 text-[12px] leading-[14px] font-normal tracking-wider">

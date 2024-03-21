@@ -1,15 +1,9 @@
 import Logo from "/src/assets/logo.svg";
 import PortfolioImg01 from "/src/assets/detail/mobile/image-manage-hero.jpg";
-import PortfolioImg01Tablet from "/src/assets/detail/tablet/image-manage-hero.jpg";
-import PortfolioImg01Desktop from "/src/assets/detail/desktop/image-manage-hero.jpg";
 import MenuIcon from "/src/assets/icons/hamburger.svg";
 import CloseIcon from "/src/assets/icons/close.svg";
 import PortfolioImg02 from "/src/assets/detail/mobile/image-manage-preview-1.jpg";
-import PortfolioImg02Tablet from "/src/assets/detail/tablet/image-manage-preview-1.jpg";
-import PortfolioImg02Desktop from "/src/assets/detail/desktop/image-manage-preview-1.jpg";
 import PortfolioImg03 from "/src/assets/detail/mobile/image-manage-preview-2.jpg";
-import PortfolioImg03Tablet from "/src/assets/detail/tablet/image-manage-preview-2.jpg";
-import PortfolioImg03Desktop from "/src/assets/detail/desktop/image-manage-preview-2.jpg";
 import ArrowRightIcon from "/src/assets/icons/arrow-right.svg";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -85,19 +79,9 @@ function Project01() {
       </div>
       <div className="flex items-center flex-col">
         <img
-          className="tablet:hidden mb-[32px]"
+          className="mb-[32px] w-[311px] tablet:mb-[40px] tablet:w-[689px] desktop:mb-[115px] desktop:w-[1110px]"
           src={PortfolioImg01}
           alt="PortfolioImg01"
-        />
-        <img
-          className="hidden desktop:hidden tablet:flex mb-[40px]"
-          src={PortfolioImg01Tablet}
-          alt="PortfolioImg01Tablet"
-        />
-        <img
-          className="hidden desktop:flex mb-[115px]"
-          src={PortfolioImg01Desktop}
-          alt="PortfolioImg01Desktop"
         />
       </div>
       <div className="desktop:flex desktop:flex-row desktop:justify-center desktop:items-start flex flex-col items-center">
@@ -105,13 +89,13 @@ function Project01() {
           <span className="desktop:w-[350px] tablet:w-[689px] opacity-25 flex bg-neutral-700 w-[311px] h-[1px]"></span>
           <div>
             <h1 className="desktop:mt-[48px] desktop:tracking-wide desktop:text-[50px] desktop:leading-[50px] tablet:max-w-[456px] text-start max-w-[311px] text-[36px] mt-[24px] mb-[24px] font-bold tracking-tight">
-              Manage
+              restaurant
             </h1>
             <p className="desktop:w-[357px] desktop:relative desktop:translate-x-0 desktop:translate-y-0 tablet:absolute tablet:translate-x-[325px] tablet:translate-y-[-67px] tablet:max-w-[375px] mb-[24px] max-w-[311px] text-neutral-700 text-[16px] leading-[30px] font-normal">
-              This project required me to build a fully responsive landing page
-              to the designs provided. I used HTML5, along with CSS Grid and
-              JavaScript for the areas that required interactivity, such as the
-              testimonial slider.
+              This project requires building a responsive restaurant website
+              using HTML, CSS(TailWind), JavaScript-React and TypeScript. It
+              includes integrating provided designs, adding interactivity, form
+              handling for reservations, testing, and deployment.
             </p>
           </div>
           <div>
@@ -123,9 +107,14 @@ function Project01() {
                 HTML / CSS / JS
               </h1>
             </div>
-            <button className="desktop:mb-[48px] transform motion-safe:hover:scale-110 duration-200 hover:bg-black hover:text-white cursor-pointer mb-[24px] outline outline-2 py-[17px] pr-[36px] pl-[32px] text-neutral-700 text-[12px] leading-[14px] font-normal tracking-wider">
-              VIEW PROJECT
-            </button>
+            <Link
+              to="https://dine-restaurant-website-murex.vercel.app/"
+              target="_blank"
+            >
+              <button className="desktop:mb-[48px] transform motion-safe:hover:scale-110 duration-200 hover:bg-black hover:text-white cursor-pointer mb-[24px] outline outline-2 py-[17px] pr-[36px] pl-[32px] text-neutral-700 text-[12px] leading-[14px] font-normal tracking-wider">
+                VIEW PROJECT
+              </button>
+            </Link>
           </div>
           <span className="desktop:w-[350px] tablet:w-[689px] opacity-25 flex bg-neutral-700 w-[311px] h-[1px]"></span>
         </div>
@@ -153,34 +142,14 @@ function Project01() {
                 Static Previews
               </h1>
               <img
-                className="tablet:hidden mb-[32px]"
+                className="mb-[32px] w-[311px] tablet:w-[688px] desktop:w-[633px]"
                 src={PortfolioImg02}
                 alt="PortfolioIndexImg01"
               />
               <img
-                className="hidden desktop:hidden tablet:flex mb-[32px]"
-                src={PortfolioImg02Tablet}
-                alt="PortfolioImg01Tablet"
-              />
-              <img
-                className="hidden desktop:flex mb-[32px]"
-                src={PortfolioImg02Desktop}
-                alt="PortfolioImg01Desktop"
-              />
-              <img
-                className="tablet:hidden mb-[32px]"
+                className="mb-[32px] w-[311px] tablet:mb-[80px] tablet:w-[688px] desktop:w-[633px]"
                 src={PortfolioImg03}
                 alt="PortfolioImg01"
-              />
-              <img
-                className="hidden desktop:hidden tablet:flex mb-[80px]"
-                src={PortfolioImg03Tablet}
-                alt="PortfolioImg01Tablet"
-              />
-              <img
-                className="hidden desktop:flex"
-                src={PortfolioImg03Desktop}
-                alt="PortfolioImg01Desktop"
               />
             </div>
           </div>
